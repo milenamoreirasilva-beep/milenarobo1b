@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inovação Tecnológica </title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #167d9a;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #00a8cc;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #167d9a;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #16222a, #3a6073);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #007d99;
+        }
+
+        /* REFLEXÃO */
+
+        .reflexao {
+            background-color: #e7f8fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .reflexao p {
+            font-size: 19px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>🚀 Inovação Tecnológica</h1>
+
+        <p></p>
+
+        <p>
+            Tecnologia, criatividade e ideias para transformar o futuro.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#tecnologias">Tecnologias</a>
+
+        <a href="#inovacao">Inovação</a>
+
+        <a href="#atividades">Atividades</a>
+
+        <a href="#projeto">Projeto</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="robos-humanoides-avancos-simulacoes.1.15.avif"
+                alt="Tecnologia e inovação"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>💡 Bem-vindos!</h2>
+
+                <p>
+                    “Os robôs humanoides representam o futuro da tecnologia, aproximando a inteligência artificial do mundo real e ajudando os seres humanos a realizar tarefas cada vez mais complexas.”
+
+                    <strong></strong> 
+                    <strong></strong>.
+                </p>
+
+                <br>
+
+                <p>
+                    Neste trabalho, vamos falar sobre os robôs humanoides, explicando o que são, como funcionam, quais tecnologias utilizam, onde podem ser usados, suas vantagens e limitações e como eles podem fazer parte do nosso futuro.
+
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+                <br>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIAS -->
+
+    <section id="tecnologias">
+
+        <h2>sobre</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <img
+                    src="images (4).jpeg"
+                    alt="Inteligência Artificial"
+                >
+
+                <h3>o que é</h3>
+
+                <p>
+                    O robô humanoide é uma máquina criada para imitar algumas características e movimentos dos seres humanos. Ele pode ter braços, pernas, cabeça e sensores para perceber o ambiente.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images.jpeg"
+                    alt="Robótica"
+                >
+
+                <h3>🦾 como funciona</h3>
+
+                <p>
+                    Ele funciona por meio de motores, sensores, computadores e inteligência artificial. Esses sistemas permitem que o robô se movimente, reconheça objetos e execute diferentes tarefas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (1).jpeg"
+                    alt="Internet das Coisas"
+                >
+
+                <h3>para que serve</h3>
+
+                <p>
+                    Os robôs humanoides podem ser usados em fábricas, hospitais, pesquisas e até em tarefas domésticas. Eles podem ajudar as pessoas em atividades repetitivas, difíceis ou perigosas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                    src="images (2).jpeg"
+                    alt="Realidade Virtual"
+                >
+
+                <h3>o futuro dos humonanoides</h3>
+
+                <p>
+                    A tecnologia dos robôs humanoides está evoluindo rapidamente. No futuro, eles poderão realizar cada vez mais tarefas e trabalhar ao lado dos seres humanos em diferentes áreas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INOVAÇÃO -->
+
+    <section id="inovacao">
+
+        <h2>robô humanoide</h2>
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>inteligencia artificial</h3>
+
+                <p>
+                    A inteligência artificial ajuda o robô humanoide a entender comandos, reconhecer objetos e tomar decisões. Ela faz com que o robô consiga realizar tarefas de maneira mais independente.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>movimentos</h3>
+
+                <p>
+                    Os humanoides possuem motores e sistemas de controle que permitem caminhar, movimentar os braços e pegar objetos. Alguns modelos conseguem até subir escadas e manter o equilíbrio
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>vantagens</h3>
+
+                <p>
+                    Uma das principais vantagens dos robôs humanoides é poder realizar tarefas perigosas ou repetitivas. Eles também podem ajudar em ambientes onde o trabalho humano apresenta riscos.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>desafios</h3>
+
+                <p>
+                    Apesar dos avanços, ainda existem desafios, como o alto custo, o consumo de energia e a dificuldade de realizar movimentos complexos. Os pesquisadores continuam trabalhando para tornar esses robôs mais seguros e eficientes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECNOLOGIA E SOCIEDADE -->
+
+    <section>
+
+        <div class="reflexao">
+
+            <h2>no que influência</h2>
+
+            <p>
+                Os robôs humanoides podem influenciar bastante a sociedade, principalmente no trabalho, na educação, na saúde e nas tarefas do dia a dia. Eles podem ajudar os seres humanos em atividades perigosas, pesadas ou repetitivas, tornando algumas tarefas mais rápidas e fáceis. Ao mesmo tempo, seu uso pode mudar algumas profissões e criar novas oportunidades de trabalho
+            </p>
+
+            <br>
+
+            <p>
+            
+            </p>
+
+            <br>
+
+            <p>
+            <strong></strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ATIVIDADES -->
+
+    <section id="atividades">
+
+        <h2>curiosidades:</h2>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                1.Alguns robôs humanoides conseguem andar sobre duas pernas, assim como os seres humanos.
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                2.Eles podem reconhecer rostos, objetos e vozes usando inteligência artificial.
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                3.Alguns conseguem conversar com pessoas e responder perguntas.
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                4.Robôs humanoides podem ser usados para realizar tarefas perigosas, evitando colocar pessoas em risco.
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                5.Eles são desenvolvidos para imitar movimentos humanos, como caminhar, pegar objetos e se sentar.
+            </p>
+
+        </div>
+
+
+        <div class="atividade">
+
+            <h3></h3>
+
+            <p>
+                6.No futuro, eles poderão ajudar em casas, hospitais, escolas e empresas, realizando diferentes tipos de tarefas.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETO FINAL -->
+
+    <section id="projeto">
+
+        <div class="projeto">
+
+            <h2>🚀 Projeto Final-Conclusão</h2>
+
+            <p>
+                Concluímos que os robôs humanoides são uma tecnologia que pode transformar o futuro. Eles podem ajudar as pessoas em diversas tarefas, como no trabalho, na saúde, na educação e em atividades do dia a dia. Apesar de trazerem muitos benefícios, também é importante usar essa tecnologia com responsabilidade. Os robôs humanoides mostram como a ciência e a tecnologia estão evoluindo e podem fazer parte cada vez mais da nossa sociedade.
+
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            🚀 Inovação Tecnológica – 1º Ano do Ensino Médio
+        </p>
+
+        <p>
+            Criar. Experimentar. Inovar. Transformar.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
